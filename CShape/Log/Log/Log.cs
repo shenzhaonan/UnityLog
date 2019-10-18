@@ -1,4 +1,12 @@
-﻿using System;
+﻿#if !IGNORE_ERROR
+#define LOG_ERROR
+#endif
+
+#if !IGNORE_EXCEPTION
+#define LOG_EXCEPTION
+#endif
+
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
@@ -200,7 +208,7 @@ namespace ThirdParty.Debug
                     }
 
                     sb.Append("}");
-                    UnityEngine.Debug.Log(sb);
+                    UnityEngine.Debug.Log(sb.ToString());
                 }
             }
             else
@@ -214,7 +222,8 @@ namespace ThirdParty.Debug
                 else
                 {
                     StringBuilder sb = new StringBuilder();
-                    sb.Append("<color=").Append(colorHex).Append(">").Append(InMsg).Append("</color>\n<color=").Append(colorHex).Append(">");
+                    sb.Append("<color=").Append(colorHex).Append(">").Append(InMsg).Append("</color>\n<color=")
+                        .Append(colorHex).Append(">");
                     using (IEnumerator<T> enumerator = InIEnumerator.GetEnumerator())
                     {
                         enumerator.MoveNext();
@@ -224,12 +233,13 @@ namespace ThirdParty.Debug
                             sb.Append(", <").Append(enumerator.Current).Append(">");
                         }
                     }
+
                     sb.Append("}").Append("</color>");
-                    UnityEngine.Debug.Log(sb);
+                    UnityEngine.Debug.Log(sb.ToString());
                 }
             }
         }
-        
+
         [Conditional("LOG_INFO")]
         public static void Info<TKey, TValue>(string InMsg, IEnumerable<KeyValuePair<TKey, TValue>> InIEnumerator,
             ColorName InColorName = ColorName.Default,
@@ -261,7 +271,7 @@ namespace ThirdParty.Debug
                     }
 
                     sb.Append("}");
-                    UnityEngine.Debug.Log(sb);
+                    UnityEngine.Debug.Log(sb.ToString());
                 }
             }
             else
@@ -275,7 +285,8 @@ namespace ThirdParty.Debug
                 else
                 {
                     StringBuilder sb = new StringBuilder();
-                    sb.Append("<color=").Append(colorHex).Append(">").Append(InMsg).Append("</color>\n<color=").Append(colorHex).Append(">");
+                    sb.Append("<color=").Append(colorHex).Append(">").Append(InMsg).Append("</color>\n<color=")
+                        .Append(colorHex).Append(">");
                     using (IEnumerator<KeyValuePair<TKey, TValue>> enumerator = InIEnumerator.GetEnumerator())
                     {
                         enumerator.MoveNext();
@@ -287,50 +298,58 @@ namespace ThirdParty.Debug
                             sb.Append(", <").Append(current.Key).Append(", ").Append(current.Value).Append(">");
                         }
                     }
+
                     sb.Append("}").Append("</color>");
-                    UnityEngine.Debug.Log(sb);
+                    UnityEngine.Debug.Log(sb.ToString());
                 }
             }
         }
 
 
         [Conditional("LOG_WARNING")]
-        public static void Warning(object InMsg)
+        public static void Warning(object InMsg, int InTag = 1)
         {
-            UnityEngine.Debug.LogWarning(InMsg);
+            if ((InTag & ShowTag) == InTag)
+                UnityEngine.Debug.LogWarning(InMsg);
         }
 
         [Conditional("LOG_WARNING")]
-        public static void Warning(object InMsg, UnityEngine.Object InContext)
+        public static void Warning(object InMsg, UnityEngine.Object InContext, int InTag = 1)
         {
-            UnityEngine.Debug.LogWarning(InMsg, InContext);
+            if ((InTag & ShowTag) == InTag) UnityEngine.Debug.LogWarning(InMsg, InContext);
         }
 
+        [Conditional("LOG_ERROR")]
         public static void Error(object InMsg)
         {
             UnityEngine.Debug.LogError(InMsg);
         }
 
+        [Conditional("LOG_ERROR")]
         public static void Error(object InMsg, UnityEngine.Object InContext)
         {
             UnityEngine.Debug.LogError(InMsg, InContext);
         }
 
+        [Conditional("LOG_ERROR")]
         public static void ErrorFormat(string InFormat, params object[] InArgs)
         {
             UnityEngine.Debug.LogErrorFormat(InFormat, InArgs);
         }
 
+        [Conditional("LOG_ERROR")]
         public static void ErrorFormat(UnityEngine.Object InContext, string InFormat, params object[] InArgs)
         {
             UnityEngine.Debug.LogErrorFormat(InContext, InFormat, InArgs);
         }
 
+        [Conditional("LOG_EXCEPTION")]
         public static void Exception(Exception InException)
         {
             UnityEngine.Debug.LogException(InException);
         }
 
+        [Conditional("LOG_EXCEPTION")]
         public static void Exception(Exception InException, UnityEngine.Object InContext)
         {
             UnityEngine.Debug.LogException(InException, InContext);

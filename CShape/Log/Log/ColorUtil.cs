@@ -683,7 +683,7 @@ namespace ThirdParty.Util
         ///纯黑 
         /// </summary> 
         Black,
-        
+
         /// <summary>
         /// 默认颜色
         /// </summary>
@@ -841,366 +841,278 @@ namespace ThirdParty.Util
         {
             switch (InColorName)
             {
-                case ColorName.LightPink: return new Color(1f, 0.714f, 0.757f);
+                case ColorName.LightPink: 
+                    return new Color(1f, 0.714f, 0.757f);
                 case ColorName.Pink:
-                    return new
-                        Color(1f, 0.753f, 0.796f);
+                    return new Color(1f, 0.753f, 0.796f);
                 case ColorName.Crimson:
-                    return new
-                        Color(0.863f, 0.078f, 0.235f);
+                    return new Color(0.863f, 0.078f, 0.235f);
                 case ColorName.LavenderBlush:
-                    return new
-                        Color(1f, 0.941f, 0.961f);
+                    return new Color(1f, 0.941f, 0.961f);
                 case ColorName.PaleVioletRed:
-                    return new
-                        Color(0.859f, 0.439f, 0.576f);
+                    return new Color(0.859f, 0.439f, 0.576f);
                 case ColorName.HotPink:
-                    return new
-                        Color(1f, 0.412f, 0.706f);
-                case ColorName.DeepPink:
-                    return new
-                        Color(1f, 0.078f, 0.576f);
+                    return new Color(1f, 0.412f, 0.706f);
+                case ColorName.DeepPink: 
+                    return new Color(1f, 0.078f, 0.576f);
                 case ColorName.MediumVioletRed:
-                    return new
-                        Color(0.78f, 0.082f, 0.522f);
+                    return new Color(0.78f, 0.082f, 0.522f);
                 case ColorName.Orchid:
-                    return new
-                        Color(0.855f, 0.439f, 0.839f);
+                    return new Color(0.855f, 0.439f, 0.839f);
                 case ColorName.Thistle:
-                    return new
-                        Color(0.847f, 0.749f, 0.847f);
+                    return new Color(0.847f, 0.749f, 0.847f);
                 case ColorName.Plum:
-                    return new
-                        Color(0.867f, 0.627f, 0.867f);
+                    return new Color(0.867f, 0.627f, 0.867f);
                 case ColorName.Violet:
-                    return new
-                        Color(0.933f, 0.51f, 0.933f);
-                case ColorName.Magenta: return new Color(1f, 0, 1f);
+                    return new Color(0.933f, 0.51f, 0.933f);
+                case ColorName.Magenta: 
+                    return new Color(1f, 0, 1f);
                 case ColorName.Fuchsia:
                     return new Color(1f, 0, 1f);
                 case ColorName.DarkMagenta:
-                    return new
-                        Color(0.545f, 0, 0.545f);
+                    return new Color(0.545f, 0, 0.545f);
                 case ColorName.Purple:
-                    return new
-                        Color(0.502f, 0, 0.502f);
+                    return new Color(0.502f, 0, 0.502f);
                 case ColorName.MediumOrchid:
-                    return new
-                        Color(0.729f, 0.333f, 0.827f);
+                    return new Color(0.729f, 0.333f, 0.827f);
                 case ColorName.DarkVoilet:
-                    return new
-                        Color(0.58f, 0, 0.827f);
+                    return new Color(0.58f, 0, 0.827f);
                 case ColorName.DarkOrchid:
-                    return new
-                        Color(0.6f, 0.196f, 0.8f);
+                    return new Color(0.6f, 0.196f, 0.8f);
                 case ColorName.Indigo:
-                    return new
-                        Color(0.294f, 0, 0.51f);
+                    return new Color(0.294f, 0, 0.51f);
                 case ColorName.BlueViolet:
-                    return new
-                        Color(0.541f, 0.169f, 0.886f);
+                    return new Color(0.541f, 0.169f, 0.886f);
                 case ColorName.MediumPurple:
-                    return new
-                        Color(0.576f, 0.439f, 0.859f);
+                    return new Color(0.576f, 0.439f, 0.859f);
                 case ColorName.MediumSlateBlue:
-                    return new
-                        Color(0.482f, 0.408f, 0.933f);
+                    return new Color(0.482f, 0.408f, 0.933f);
                 case ColorName.SlateBlue:
-                    return new
-                        Color(0.416f, 0.353f, 0.804f);
+                    return new Color(0.416f, 0.353f, 0.804f);
                 case ColorName.DarkSlateBlue:
-                    return new
-                        Color(0.282f, 0.239f, 0.545f);
+                    return new Color(0.282f, 0.239f, 0.545f);
                 case ColorName.Lavender:
-                    return new
-                        Color(0.902f, 0.902f, 0.98f);
+                    return new Color(0.902f, 0.902f, 0.98f);
                 case ColorName.GhostWhite:
-                    return new
-                        Color(0.973f, 0.973f, 1f);
-                case ColorName.Blue: return new Color(0, 0, 1f);
+                    return new Color(0.973f, 0.973f, 1f);
+                case ColorName.Blue: 
+                    return new Color(0, 0, 1f);
                 case ColorName.MediumBlue:
                     return new Color(0, 0, 0.804f);
                 case ColorName.MidnightBlue:
-                    return new
-                        Color(0.098f, 0.098f, 0.439f);
-                case ColorName.DarkBlue: return new Color(0, 0, 0.545f);
+                    return new Color(0.098f, 0.098f, 0.439f);
+                case ColorName.DarkBlue: 
+                    return new Color(0, 0, 0.545f);
                 case ColorName.Navy:
                     return new Color(0, 0, 0.502f);
                 case ColorName.RoyalBlue:
-                    return new
-                        Color(0.255f, 0.412f, 0.882f);
+                    return new Color(0.255f, 0.412f, 0.882f);
                 case ColorName.CornflowerBlue:
-                    return new
-                        Color(0.392f, 0.584f, 0.929f);
+                    return new Color(0.392f, 0.584f, 0.929f);
                 case ColorName.LightSteelBlue:
-                    return new
-                        Color(0.69f, 0.769f, 0.871f);
+                    return new Color(0.69f, 0.769f, 0.871f);
                 case ColorName.LightSlateGray:
-                    return new
-                        Color(0.467f, 0.533f, 0.6f);
+                    return new Color(0.467f, 0.533f, 0.6f);
                 case ColorName.SlateGray:
-                    return new
-                        Color(0.439f, 0.502f, 0.565f);
+                    return new Color(0.439f, 0.502f, 0.565f);
                 case ColorName.DoderBlue:
-                    return new
-                        Color(0.118f, 0.565f, 1f);
+                    return new Color(0.118f, 0.565f, 1f);
                 case ColorName.AliceBlue:
-                    return new
-                        Color(0.941f, 0.973f, 1f);
+                    return new Color(0.941f, 0.973f, 1f);
                 case ColorName.SteelBlue:
-                    return new
-                        Color(0.275f, 0.51f, 0.706f);
+                    return new Color(0.275f, 0.51f, 0.706f);
                 case ColorName.LightSkyBlue:
-                    return new
-                        Color(0.529f, 0.808f, 0.98f);
+                    return new Color(0.529f, 0.808f, 0.98f);
                 case ColorName.SkyBlue:
-                    return new
-                        Color(0.529f, 0.808f, 0.922f);
+                    return new Color(0.529f, 0.808f, 0.922f);
                 case ColorName.DeepSkyBlue:
-                    return new
-                        Color(0, 0.749f, 1f);
+                    return new Color(0, 0.749f, 1f);
                 case ColorName.LightBLue:
-                    return new
-                        Color(0.678f, 0.847f, 0.902f);
+                    return new Color(0.678f, 0.847f, 0.902f);
                 case ColorName.PowDerBlue:
-                    return new
-                        Color(0.69f, 0.878f, 0.902f);
+                    return new Color(0.69f, 0.878f, 0.902f);
                 case ColorName.CadetBlue:
-                    return new
-                        Color(0.373f, 0.62f, 0.627f);
+                    return new Color(0.373f, 0.62f, 0.627f);
                 case ColorName.Azure:
-                    return new
-                        Color(0.941f, 1f, 1f);
+                    return new Color(0.941f, 1f, 1f);
                 case ColorName.LightCyan:
-                    return new
-                        Color(0.882f, 1f, 1f);
+                    return new Color(0.882f, 1f, 1f);
                 case ColorName.PaleTurquoise:
-                    return new
-                        Color(0.686f, 0.933f, 0.933f);
-                case ColorName.Cyan: return new Color(0, 1f, 1f);
+                    return new Color(0.686f, 0.933f, 0.933f);
+                case ColorName.Cyan: 
+                    return new Color(0, 1f, 1f);
                 case ColorName.Aqua:
                     return new Color(0, 1f, 1f);
                 case ColorName.DarkTurquoise:
-                    return new
-                        Color(0, 0.808f, 0.82f);
+                    return new Color(0, 0.808f, 0.82f);
                 case ColorName.DarkSlateGray:
-                    return new
-                        Color(0.184f, 0.31f, 0.31f);
+                    return new Color(0.184f, 0.31f, 0.31f);
                 case ColorName.DarkCyan:
-                    return new
-                        Color(0, 0.545f, 0.545f);
+                    return new Color(0, 0.545f, 0.545f);
                 case ColorName.Teal:
-                    return new
-                        Color(0, 0.502f, 0.502f);
+                    return new Color(0, 0.502f, 0.502f);
                 case ColorName.MediumTurquoise:
-                    return new
-                        Color(0.282f, 0.82f, 0.8f);
+                    return new Color(0.282f, 0.82f, 0.8f);
                 case ColorName.LightSeaGreen:
-                    return new
-                        Color(0.125f, 0.698f, 0.667f);
+                    return new Color(0.125f, 0.698f, 0.667f);
                 case ColorName.Turquoise:
-                    return new
-                        Color(0.251f, 0.878f, 0.816f);
+                    return new Color(0.251f, 0.878f, 0.816f);
                 case ColorName.Auqamarin:
-                    return new
-                        Color(0.498f, 1f, 0.667f);
+                    return new Color(0.498f, 1f, 0.667f);
                 case ColorName.MediumAquamarine:
-                    return new
-                        Color(0, 0.98f, 0.604f);
+                    return new Color(0, 0.98f, 0.604f);
                 case ColorName.MediumSpringGreen:
-                    return new
-                        Color(0, 1f, 0.498f);
+                    return new Color(0, 1f, 0.498f);
                 case ColorName.MintCream:
-                    return new
-                        Color(0.961f, 1f, 0.98f);
+                    return new Color(0.961f, 1f, 0.98f);
                 case ColorName.SpringGreen:
-                    return new
-                        Color(0.235f, 0.702f, 0.443f);
+                    return new Color(0.235f, 0.702f, 0.443f);
                 case ColorName.SeaGreen:
-                    return new
-                        Color(0.18f, 0.545f, 0.341f);
+                    return new Color(0.18f, 0.545f, 0.341f);
                 case ColorName.Honeydew:
-                    return new
-                        Color(0.941f, 1f, 0.941f);
+                    return new Color(0.941f, 1f, 0.941f);
                 case ColorName.LightGreen:
-                    return new
-                        Color(0.565f, 0.933f, 0.565f);
+                    return new Color(0.565f, 0.933f, 0.565f);
                 case ColorName.PaleGreen:
-                    return new
-                        Color(0.596f, 0.984f, 0.596f);
+                    return new Color(0.596f, 0.984f, 0.596f);
                 case ColorName.DarkSeaGreen:
-                    return new
-                        Color(0.561f, 0.737f, 0.561f);
+                    return new Color(0.561f, 0.737f, 0.561f);
                 case ColorName.LimeGreen:
-                    return new
-                        Color(0.196f, 0.804f, 0.196f);
-                case ColorName.Lime: return new Color(0, 1f, 0);
+                    return new Color(0.196f, 0.804f, 0.196f);
+                case ColorName.Lime: 
+                    return new Color(0, 1f, 0);
                 case ColorName.ForestGreen:
                     return new Color(0.133f, 0.545f, 0.133f);
                 case ColorName.Green:
-                    return new
-                        Color(0, 0.502f, 0);
-                case ColorName.DarkGreen: return new Color(0, 0.392f, 0);
+                    return new Color(0, 0.502f, 0);
+                case ColorName.DarkGreen: 
+                    return new Color(0, 0.392f, 0);
                 case ColorName.Chartreuse:
                     return new Color(0.498f, 1f, 0);
                 case ColorName.LawnGreen:
-                    return new
-                        Color(0.486f, 0.988f, 0);
+                    return new Color(0.486f, 0.988f, 0);
                 case ColorName.GreenYellow:
-                    return new
-                        Color(0.678f, 1f, 0.184f);
+                    return new Color(0.678f, 1f, 0.184f);
                 case ColorName.OliveDrab:
-                    return new
-                        Color(0.333f, 0.42f, 0.184f);
+                    return new Color(0.333f, 0.42f, 0.184f);
                 case ColorName.Beige:
-                    return new
-                        Color(0.961f, 0.961f, 0.863f);
+                    return new Color(0.961f, 0.961f, 0.863f);
                 case ColorName.LightGoldenrodYellow:
-                    return new
-                        Color(0.98f, 0.98f, 0.824f);
+                    return new Color(0.98f, 0.98f, 0.824f);
                 case ColorName.Ivory:
-                    return new
-                        Color(1f, 1f, 0.941f);
-                case ColorName.LightYellow: return new Color(1f, 1f, 0.878f);
+                    return new Color(1f, 1f, 0.941f);
+                case ColorName.LightYellow: 
+                    return new Color(1f, 1f, 0.878f);
                 case ColorName.Yellow:
                     return new Color(1f, 1f, 0);
-                case ColorName.Olive: return new Color(0.502f, 0.502f, 0);
+                case ColorName.Olive: 
+                    return new Color(0.502f, 0.502f, 0);
                 case ColorName.DarkKhaki:
                     return new Color(0.741f, 0.718f, 0.42f);
                 case ColorName.LemonChiffon:
-                    return new
-                        Color(1f, 0.98f, 0.804f);
+                    return new Color(1f, 0.98f, 0.804f);
                 case ColorName.PaleGodenrod:
-                    return new
-                        Color(0.933f, 0.91f, 0.667f);
+                    return new Color(0.933f, 0.91f, 0.667f);
                 case ColorName.Khaki:
-                    return new
-                        Color(0.941f, 0.902f, 0.549f);
-                case ColorName.Gold: return new Color(1f, 0.843f, 0);
+                    return new Color(0.941f, 0.902f, 0.549f);
+                case ColorName.Gold: 
+                    return new Color(1f, 0.843f, 0);
                 case ColorName.Cornislk:
                     return new Color(1f, 0.973f, 0.863f);
                 case ColorName.GoldEnrod:
-                    return new
-                        Color(0.855f, 0.647f, 0.125f);
+                    return new Color(0.855f, 0.647f, 0.125f);
                 case ColorName.FloralWhite:
-                    return new
-                        Color(1f, 0.98f, 0.941f);
+                    return new Color(1f, 0.98f, 0.941f);
                 case ColorName.OldLace:
-                    return new
-                        Color(0.992f, 0.961f, 0.902f);
+                    return new Color(0.992f, 0.961f, 0.902f);
                 case ColorName.Wheat:
-                    return new
-                        Color(0.961f, 0.871f, 0.702f);
+                    return new Color(0.961f, 0.871f, 0.702f);
                 case ColorName.Moccasin:
-                    return new
-                        Color(1f, 0.894f, 0.71f);
-                case ColorName.Orange: return new Color(1f, 0.647f, 0);
+                    return new Color(1f, 0.894f, 0.71f);
+                case ColorName.Orange: 
+                    return new Color(1f, 0.647f, 0);
                 case ColorName.PapayaWhip:
                     return new Color(1f, 0.937f, 0.835f);
                 case ColorName.BlanchedAlmond:
-                    return new
-                        Color(1f, 0.922f, 0.804f);
+                    return new Color(1f, 0.922f, 0.804f);
                 case ColorName.NavajoWhite:
-                    return new
-                        Color(1f, 0.871f, 0.678f);
+                    return new Color(1f, 0.871f, 0.678f);
                 case ColorName.AntiqueWhite:
-                    return new
-                        Color(0.98f, 0.922f, 0.843f);
+                    return new Color(0.98f, 0.922f, 0.843f);
                 case ColorName.Tan:
-                    return new
-                        Color(0.824f, 0.706f, 0.549f);
+                    return new Color(0.824f, 0.706f, 0.549f);
                 case ColorName.BrulyWood:
-                    return new
-                        Color(0.871f, 0.722f, 0.529f);
+                    return new Color(0.871f, 0.722f, 0.529f);
                 case ColorName.Bisque:
-                    return new
-                        Color(1f, 0.894f, 0.769f);
-                case ColorName.DarkOrange: return new Color(1f, 0.549f, 0);
+                    return new Color(1f, 0.894f, 0.769f);
+                case ColorName.DarkOrange: 
+                    return new Color(1f, 0.549f, 0);
                 case ColorName.Linen:
                     return new Color(0.98f, 0.941f, 0.902f);
                 case ColorName.Peru:
-                    return new
-                        Color(0.804f, 0.522f, 0.247f);
+                    return new Color(0.804f, 0.522f, 0.247f);
                 case ColorName.PeachPuff:
-                    return new
-                        Color(1f, 0.855f, 0.725f);
+                    return new Color(1f, 0.855f, 0.725f);
                 case ColorName.SandyBrown:
-                    return new
-                        Color(0.957f, 0.643f, 0.376f);
+                    return new Color(0.957f, 0.643f, 0.376f);
                 case ColorName.Chocolate:
-                    return new
-                        Color(0.824f, 0.412f, 0.118f);
+                    return new Color(0.824f, 0.412f, 0.118f);
                 case ColorName.SaddleBrown:
-                    return new
-                        Color(0.545f, 0.271f, 0.075f);
+                    return new Color(0.545f, 0.271f, 0.075f);
                 case ColorName.SeaShell:
-                    return new
-                        Color(1f, 0.961f, 0.933f);
+                    return new Color(1f, 0.961f, 0.933f);
                 case ColorName.Sienna:
-                    return new
-                        Color(0.627f, 0.322f, 0.176f);
+                    return new Color(0.627f, 0.322f, 0.176f);
                 case ColorName.LightSalmon:
-                    return new
-                        Color(1f, 0.627f, 0.478f);
+                    return new Color(1f, 0.627f, 0.478f);
                 case ColorName.Coral:
-                    return new
-                        Color(1f, 0.498f, 0.314f);
+                    return new Color(1f, 0.498f, 0.314f);
                 case ColorName.OrangeRed:
-                    return new
-                        Color(1f, 0.271f, 0);
+                    return new Color(1f, 0.271f, 0);
                 case ColorName.DarkSalmon:
-                    return new
-                        Color(0.914f, 0.588f, 0.478f);
+                    return new Color(0.914f, 0.588f, 0.478f);
                 case ColorName.Tomato:
-                    return new
-                        Color(1f, 0.388f, 0.278f);
+                    return new Color(1f, 0.388f, 0.278f);
                 case ColorName.MistyRose:
-                    return new
-                        Color(1f, 0.894f, 0.882f);
+                    return new Color(1f, 0.894f, 0.882f);
                 case ColorName.Salmon:
-                    return new
-                        Color(0.98f, 0.502f, 0.447f);
+                    return new Color(0.98f, 0.502f, 0.447f);
                 case ColorName.Snow:
-                    return new
-                        Color(1f, 0.98f, 0.98f);
+                    return new Color(1f, 0.98f, 0.98f);
                 case ColorName.LightCoral:
-                    return new
-                        Color(0.941f, 0.502f, 0.502f);
+                    return new Color(0.941f, 0.502f, 0.502f);
                 case ColorName.RosyBrown:
-                    return new
-                        Color(0.737f, 0.561f, 0.561f);
+                    return new Color(0.737f, 0.561f, 0.561f);
                 case ColorName.IndianRed:
-                    return new
-                        Color(0.804f, 0.361f, 0.361f);
-                case ColorName.Red: return new Color(1f, 0, 0);
+                    return new Color(0.804f, 0.361f, 0.361f);
+                case ColorName.Red: 
+                    return new Color(1f, 0, 0);
                 case ColorName.Brown:
                     return new Color(0.647f, 0.165f, 0.165f);
                 case ColorName.FireBrick:
                     return new Color(0.698f, 0.133f, 0.133f);
-                case ColorName.DarkRed: return new Color(0.545f, 0, 0);
+                case ColorName.DarkRed: 
+                    return new Color(0.545f, 0, 0);
                 case ColorName.Maroon:
                     return new Color(0.502f, 0, 0);
-                case ColorName.White: return new Color(1f, 1f, 1f);
+                case ColorName.White: 
+                    return new Color(1f, 1f, 1f);
                 case ColorName.WhiteSmoke:
                     return new Color(0.961f, 0.961f, 0.961f);
                 case ColorName.Gainsboro:
                     return new Color(0.863f, 0.863f, 0.863f);
                 case ColorName.LightGrey:
-                    return new
-                        Color(0.827f, 0.827f, 0.827f);
+                    return new Color(0.827f, 0.827f, 0.827f);
                 case ColorName.Silver:
-                    return new
-                        Color(0.753f, 0.753f, 0.753f);
+                    return new Color(0.753f, 0.753f, 0.753f);
                 case ColorName.DarkGray:
-                    return new
-                        Color(0.663f, 0.663f, 0.663f);
+                    return new Color(0.663f, 0.663f, 0.663f);
                 case ColorName.Gray:
-                    return new
-                        Color(0.502f, 0.502f, 0.502f);
+                    return new Color(0.502f, 0.502f, 0.502f);
                 case ColorName.DimGray:
-                    return new
-                        Color(0.412f, 0.412f, 0.412f);
-                case ColorName.Black: return new Color(0, 0, 0);
+                    return new Color(0.412f, 0.412f, 0.412f);
+                case ColorName.Black: 
+                    return new Color(0, 0, 0);
             }
 
             return Color.black;

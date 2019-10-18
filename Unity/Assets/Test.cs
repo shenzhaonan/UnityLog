@@ -17,8 +17,7 @@ public class Test : MonoBehaviour
 
         List<string> ls = new List<string>();
         ls.Add("a");
-        ls.Add("b");
-        ls.Add("c");
+        ls.Add("b");ls.Add("c");
         Log.Info("List", ls, ColorName.Linen);
         
         Queue<float> queue = new Queue<float>();
